@@ -3,6 +3,8 @@
 
 def greet(name: str) -> str:
     """返回对指定姓名的问候语。"""
+    if name == "":
+        return "Name cannot be empty."
     return f"Hello, {name}!"
 
 
